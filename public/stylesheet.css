@@ -1,0 +1,34 @@
+
+.loader{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 9999;
+}
+.donut {
+  width: 2rem;
+  height: 2rem;
+  margin: 2rem;
+  border-radius: 50%;
+  border: 0.3rem solid rgba(151, 159, 208, 0.3);
+  border-top-color: #979fd0;
+  -webkit-animation: 1.5s spin infinite linear;
+          animation: 1.5s spin infinite linear;
+}
+.donut.multi {
+  border-bottom-color: #979fd0;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
